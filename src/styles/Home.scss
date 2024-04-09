@@ -1,0 +1,17 @@
+.app{
+    width: 100%;
+}
+.app-grid{
+    width: 81.5%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: #f6f6f6;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 150px;
+}

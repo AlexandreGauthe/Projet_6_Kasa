@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/Banner.scss"
 
-export default function Banner() {
+export default function Banner(props) {
     return (
         <div className="banner">
-            <h1 className="banner-title"> Chez vous, partout et ailleurs </h1>
+            <h1 className="banner-title">{props.title}</h1>
         </div>
     )
 }

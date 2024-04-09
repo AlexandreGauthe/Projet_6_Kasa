@@ -8,15 +8,17 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top : 50px;
+    margin-top : 0px;
     margin-left: 50px;
     
     .logo{
         width: 10%;
+        margin-left: 100px;
     }
 
     .menu {
         margin-right: 100px;
+        margin-top: 50px;
         display: flex;
         gap: 20px;
     

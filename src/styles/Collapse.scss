@@ -1,0 +1,47 @@
+@import "./Variables.scss";
+
+.label_block{
+    width: 100%;
+}
+
+.label {
+    width: 75%;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: $main-text-color;
+    font-family: $main-font-familiy;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 120px;
+    margin-top: 40px;
+    margin-bottom: 22px;
+    }
+
+.icone {
+    font-size: 28px;
+    color: white;
+    margin-top: 5px;
+}
+
+.content p{
+    width: 92%;
+    color: $secondary-text-color;
+    font-family: $main-font-familiy;
+    font-size: 14px;
+    margin: auto;
+    margin-left: 20px;
+    padding-top: 14px;
+    padding-bottom: 20px;
+}
+
+.content{
+    margin: auto;
+    width: 76.4%;
+    background-color: #f6f6f6;
+    margin-top: -21px;
+    border-radius: 5px;
+    margin-right: 120px;
+}

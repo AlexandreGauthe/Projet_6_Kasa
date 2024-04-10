@@ -4,13 +4,14 @@
     margin: auto;
     margin-top: 60px;
     margin-left: 150px;
+    margin-bottom: 50px;
     width: 86%;
     background-image: url(../assets/img1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 25px;
-    ;
+    height: 223px;
     
     .banner-title{
         color : black;
@@ -20,9 +21,10 @@
         font-size: 48px;
         font-weight: 700;
         backdrop-filter: brightness(0.5);
-        padding: 60px;
+        padding: 82px;
         border-radius: 25px;
         text-shadow: 0px 0px 4px black;
+        height: 60px;
     }
 }    
 

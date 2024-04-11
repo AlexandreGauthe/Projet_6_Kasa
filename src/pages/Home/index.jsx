@@ -10,9 +10,9 @@ export default  function Home() {
     <div className="app">
       <div className="app-top">
           <Header />
-          <Banner title="Chez vous, ici et ailleurs" />
+          <Banner title="Chez vous, ici et ailleurs"/>
       </div>
-      <div className="app-grid">
+      <div className="app__app-grid">
           <Card />
       </div> 
       <Footer />  

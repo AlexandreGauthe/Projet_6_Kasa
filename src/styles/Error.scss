@@ -1,26 +1,25 @@
 @import "./Variables.scss";
 
-.error-title{
-    text-align: center;
-    color: $main-text-color;
-    font-family: $main-font-familiy;
-    font-size: 18em;
-}   
-
-
-.error-text{
-    font-size: 2.25em;
-    margin: auto;
-    text-align: center;
-    color: $main-text-color;
-    font-family: $main-font-familiy;
-    margin-bottom: 300px;
-}
-
-.error-link{
-    margin-left: 560px;
-    font-size: 18px;
-    color: $secondary-text-color;
-}
+.error{
+    .error__title{
+        text-align: center;
+        color: $main-text-color;
+        font-family: $main-font-familiy;
+        font-size: 18em;
+    }   
+    .error__text{
+        font-size: 2.25em;
+        margin: auto;
+        text-align: center;
+        color: $main-text-color;
+        font-family: $main-font-familiy;
+        margin-bottom: 300px;
+    }
+    .error__link{
+        margin-left: 560px;
+        font-size: 18px;
+        color: $secondary-text-color;
+    }
+}    
 
 

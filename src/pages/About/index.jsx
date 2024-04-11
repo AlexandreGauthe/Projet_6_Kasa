@@ -11,7 +11,7 @@ export default  function About() {
   return (
      <div> 
         <Header />
-        <Banner title="" style= {{backgroundImage : `url(${img})`}} />
+        <Banner style= {{backgroundImage : `url(${img})`}} />
         <div className="collapse-block">
          <AboutCollapse/>
         </div>  

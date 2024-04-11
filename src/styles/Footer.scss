@@ -9,18 +9,18 @@ footer{
     justify-content: flex-start;
     align-items: center;
     height: 208px;
+    p{
+        font-size: 25px;
+        font-family: $main-font-familiy;
+        color: white;
+        text-align: center;
+        margin-top: 60px;
+    }
+    img{
+        width: 10%;
+        object-fit: cover;
+        margin-top: 50px;
+    }
 }
 
-footer p {
-    font-size: 25px;
-    font-family: $main-font-familiy;
-    color: white;
-    text-align: center;
-    margin-top: 60px;
-}
 
-img{
-    width: 10%;
-    object-fit: cover;
-    margin-top: 50px;
-}

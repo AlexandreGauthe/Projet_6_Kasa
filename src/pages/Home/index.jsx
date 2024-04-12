@@ -5,6 +5,7 @@ import Card from "../../components/Card";
 import Footer from "../../components/Footer";
 import "../../styles/Home.scss";
 
+
 export default  function Home() {
   return (
     <div className="app">

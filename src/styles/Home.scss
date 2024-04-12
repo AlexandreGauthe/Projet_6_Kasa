@@ -1,17 +1,18 @@
 .app{
     width: 100%;
     .app__app-grid{
-        width: 81.5%;
-        margin: auto;
+        width: 86%;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 10px;
+        gap: 20px;
         flex-wrap: wrap;
         background-color: #f6f6f6;
-        padding: 30px;
-        border-radius: 10px;
+        border-radius: 25px;
+        margin-bottom: 60px;
+        padding-bottom: 10px;
+        padding-top: 180px;
         margin-left: 150px;
     }
 }

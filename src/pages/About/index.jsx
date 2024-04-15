@@ -4,7 +4,7 @@ import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import "../../styles/About.scss"
 import img from "../../assets/img2.png";
-import AboutCollapse from "../../components/AboutCollapse";
+import AboutMaker from "../../components/AboutMaker";
 
 export default  function About() {
    
@@ -13,7 +13,7 @@ export default  function About() {
         <Header />
         <Banner style= {{backgroundImage : `url(${img})`}} />
         <div className="collapse-block">
-         <AboutCollapse/>
+         <AboutMaker/>
         </div>  
         <Footer />
      </div>       

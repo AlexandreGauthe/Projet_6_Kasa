@@ -1,0 +1,41 @@
+@import "./Variables.scss";
+
+.details-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .details-section__text-block{
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-family: $main-font-familiy;
+        margin-left: 150px;
+        .text-block__title{
+            font-size: 36px;
+            color: $main-text-color;
+        }
+        .text-block__place{
+           margin-top: -15px;
+        }
+    }    
+    .details-section__author{
+        display: flex;
+        width: 10%;
+        margin-right: 50px;
+        gap: 15px;
+        .author__name{
+        color: $main-text-color;    
+        }
+        img{
+            border-radius: 50%;
+            object-fit: cover;
+            width : 80%
+        }
+    }    
+    
+}
+
+

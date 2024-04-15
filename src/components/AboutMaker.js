@@ -4,7 +4,7 @@ import collapsesList from "../data/about-content.json"
 
  
 
-    export default function AboutCollapse() {
+    export default function AboutMaker() {
 
         return(
             collapsesList.map((collapse, index) =>(

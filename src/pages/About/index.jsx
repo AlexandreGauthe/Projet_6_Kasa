@@ -9,7 +9,7 @@ import AboutMaker from "../../components/AboutMaker";
 export default  function About() {
    
   return (
-     <div> 
+     <div className="screen"> 
         <Header />
         <Banner style= {{backgroundImage : `url(${img})`}} />
         <div className="collapse-block">

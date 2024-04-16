@@ -9,8 +9,9 @@ header {
     margin-top : 0px;
     margin-left: 50px;
     .logo{
-        width: 10%;
+        width: 12%;
         margin-left: 100px;
+        margin-top: 30px;
     }
     .menu {
         margin-right: 100px;
@@ -22,6 +23,7 @@ header {
             text-decoration: none;
             font-family: $main-font-familiy;
             font-weight: bold;
+            font-size: 24px;
         }
     }
 }

@@ -16,6 +16,7 @@ root.render(
           <Route path="/about" element={<About />} />
           <Route path="/accomodations/:imageid" element={<Accomodations />} />
           <Route path="*" element={<Error />} />
+          <Route path="/error" element={<Error />}/>
         </Routes>
     </Router>
   </React.StrictMode>

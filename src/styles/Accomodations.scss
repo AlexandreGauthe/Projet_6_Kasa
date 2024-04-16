@@ -1,0 +1,54 @@
+@import "./Variables.scss";
+.ranking{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    .ranking__tag-box{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        margin-left: 150px;
+    }
+    .ranking__stars-box{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        margin-right: 50px;
+        .star__icone_on{
+            color:$main-text-color;
+        }
+        .star__icone_off{
+            color: #E3E3E3;
+        }
+    }        
+}
+
+.collapse-box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 115px;
+    .label-block{
+        width: 48.7%;
+    }
+        .label-block__label{
+            font-weight: bold;
+            font-size: 24px;
+        }    
+        li{
+            list-style: none;
+        }
+        p{
+            font-family:$main-font-familiy;
+            font-size: 14px;
+            padding: 20px 20px 35px 12px;
+            text-align: left;
+        }
+        .visible{
+            width: 78%;
+        }    
+}

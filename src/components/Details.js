@@ -12,7 +12,6 @@ export default function Details(props){
                 <p className="author__name">{props.name}</p>
                 <img src={props.src} alt={`${props.name}`}></img>
             </div>
-               
         </div>    
     )
 }

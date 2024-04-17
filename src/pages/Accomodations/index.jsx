@@ -15,10 +15,9 @@ import "../../styles/Accomodations.scss"
 export default  function Accomodations() {
   const  { imageid } = useParams();
   const selectedAccomodation = logements.find((logement) => logement.id === imageid);
-  const {title,location,host,tags, rating, description, equipments,pictures} = selectedAccomodation;
+  const {id,title,location,host,tags, rating, description, equipments,pictures} = selectedAccomodation;
   const range = [1, 2, 3, 4, 5];
   const [selectedPicture, setSelectedPicture] = useState(0);
-  
   const nextPictOnClick = (event) =>{
     selectedPicture <= pictures.length -2 ? setSelectedPicture(selectedPicture + 1) : setSelectedPicture(0);
   }

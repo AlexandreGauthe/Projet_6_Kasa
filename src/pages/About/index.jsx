@@ -8,13 +8,13 @@ import "../../styles/About.scss"
 export default  function About() {
    
   return (
-     <div className="screen"> 
+     <div> 
         <Header />
         <Banner style= {{backgroundImage : `url(${img})`}} />
         <div className="collapse-block">
          <AboutMaker/>
-        </div>  
-        <Footer style={{position: "absolute", bottom:"0px", left:"0px",right:"0px"}}/>
-     </div>       
+        </div>
+        <Footer/>
+      </div>       
   );
 }

@@ -52,7 +52,7 @@ export default  function Accomodations() {
             <Collapse  className="acc-collapse" title="Equipement"  content={equipments.map((equip,index) =>
               <li key={`${equip}-${index}`}>{equip}</li>)}/>
       </div>
-      <Footer style={{position: "absolute", bottom:"0px", left:"0px",right:"0px"}} />
+      <Footer />
     </div>  
   );
 }

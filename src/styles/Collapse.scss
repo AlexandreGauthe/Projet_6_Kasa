@@ -2,6 +2,11 @@
 
 .label-block{
     width: 100%;
+    @media (max-width:376px){
+        width: 100vw;
+        margin-left: 10px;
+        margin-bottom: -15px;
+    }
     
     .label-block__label {
         width: 75%;
@@ -18,12 +23,20 @@
         margin-right: 120px;
         margin-top: 40px;
         margin-bottom: 22px;
+        @media (max-width:376px){
+            width: 85vw;
+            font-size: 13px;
+            margin-bottom: -30px;
+        }
        }
         .label-block__icone{
             font-size: 28px;
             color: white;
             margin-top: 5px;
             transition: 400ms;
+            @media (max-width:376px){
+                font-size: 13px;
+            }
         }
         .rotate{
             transform: rotate(180deg);
@@ -43,6 +56,13 @@
             overflow: hidden;
             height: 0px;
             transition: bottom 0.4s, height 0.3s;
+            @media (max-width:376px){
+                font-size: 13px;
+                margin: auto;
+                width: 78.5%;
+                margin-left: 0px;
+                margin-top: 30px;
+            }
             }
         
         .label-block__content--visible{
@@ -60,6 +80,15 @@
             padding-top: 2px;
             padding-bottom: 30px;
             background-color:#f6f6f6;
+            @media (max-width:376px){
+                height: 100px;
+                font-size: 13px;
+                margin: auto;
+                width: 80%;
+                margin-left: 0px;
+                margin-top: 30px;
+                padding-bottom: 0px;
+            }
             }
         #text{
             width: 100%;

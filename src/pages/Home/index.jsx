@@ -5,7 +5,6 @@ import Card from "../../components/Card";
 import Footer from "../../components/Footer";
 import "../../styles/Home.scss";
 
-
 export default  function Home() {
   return (
     <div className="app">
@@ -16,7 +15,7 @@ export default  function Home() {
       <div className="app__app-grid">
           <Card />
       </div> 
-      <Footer />  
+      <Footer  className="home_footer"/>  
     </div>  
   );
 }

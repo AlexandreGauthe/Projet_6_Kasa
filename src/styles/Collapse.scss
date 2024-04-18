@@ -2,6 +2,7 @@
 
 .label-block{
     width: 100%;
+    
     .label-block__label {
         width: 75%;
         color: white;
@@ -17,7 +18,7 @@
         margin-right: 120px;
         margin-top: 40px;
         margin-bottom: 22px;
-        }
+       }
         .label-block__icone{
             font-size: 28px;
             color: white;
@@ -28,34 +29,42 @@
             transform: rotate(180deg);
         }
         .label-block__content{
+            position: relative;
+            bottom: 4px;
             margin: auto;
-            width: 76.4%;
+            width: 73.6%;
             background-color: #f6f6f6;
-            margin-top: -21px;
             border-radius: 5px;
-            margin-right: 120px;
-            display: none;
-        }
-        .visible{
-            display: block;
-            margin: auto;
-            width: 76.4%;
-            background-color: #f6f6f6;
+            margin-left: 215px;
             margin-top: -21px;
-            border-radius: 5px;
-            margin-right: 120px;
-        }
-        .label-block__content p{
-            width: 92%;
-            color: $secondary-text-color;
-            font-family: $main-font-familiy;
-            font-size: 14px;
-            margin: auto;
-            margin-left: 20px;
-            padding-top: 14px;
-            padding-bottom: 20px;
-        }
+            padding-left: 20px;
+            padding-right: 20px;
+            opacity: 1;
+            overflow: hidden;
+            height: 0px;
+            transition: bottom 0.4s, height 0.3s;
+            }
         
+        .label-block__content--visible{
+            transition: bottom 0.4s, height 0.3s;
+            position: relative;
+            bottom: 0px;
+            height: 20px;
+            opacity: 1;
+            width: 73.6%;
+            height: 80px;
+            margin-left: 215px;
+            margin-top: -21px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 2px;
+            padding-bottom: 30px;
+            background-color:#f6f6f6;
+            }
+        #text{
+            width: 100%;
+            margin-bottom: 20px;
+        }    
 }
 
 

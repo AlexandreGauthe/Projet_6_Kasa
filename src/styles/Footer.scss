@@ -1,13 +1,13 @@
 @import "./Variables.scss";
 
 footer{
-    width: 100%;
+    width:100%;
     background-color: black;
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 20px;
     height: 208px;
     p{
         font-size: 25px;

@@ -48,8 +48,8 @@ export default  function Accomodations() {
         </div>
       </div>
       <div className="collapse-box">
-            <Collapse  className="acc-collapse" title="Description" content={description}/>
-            <Collapse  className="acc-collapse" title="Equipement"  content={equipments.map((equip,index) =>
+            <Collapse  title="Description" content={description}/>
+            <Collapse  title="Equipement"  content={equipments.map((equip,index) =>
               <li key={`${equip}-${index}`}>{equip}</li>)}/>
       </div>
       <Footer />

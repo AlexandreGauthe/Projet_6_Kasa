@@ -11,6 +11,9 @@
     margin-bottom: 150px;
     margin-left: 40px;
     margin-right: -30px;
+    @media (max-width:870px){
+        margin-right:-40px;
+    }
     @media (max-width: 760px){
        width: 100vw;
        margin-left: 38px;
@@ -29,6 +32,11 @@
             color: $third-text-color;
             font-weight: 700;
             margin-left: 20px;
+            @media (max-width:870px){
+                width: 50%;
+                font-size: 14px;
+                
+            }
             @media (max-width: 760px){
                 width: 80%;
                 }
@@ -40,11 +48,14 @@
             width: 93.9%;
             height: 340px;
             border-radius: 10px;
+            @media (max-width:870px){
+                width: 20vw;
+            }
             @media (max-width: 760px){
-                width: 86vw;
+                width: 83vw;
                 }
             @media (max-width:376px){
-                width: 100wv;
+                width: 90vw;
             }    
         }
     }    

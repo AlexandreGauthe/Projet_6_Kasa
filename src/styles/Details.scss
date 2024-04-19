@@ -12,19 +12,20 @@
         flex-wrap: wrap;
         flex-direction: column;
         font-family: $main-font-familiy;
-        margin-left: 150px;
+        margin-left: 100px;
         .text-block__title{
             font-size: 36px;
             color: $main-text-color;
         }
         .text-block__place{
            margin-top: -15px;
+           margin-left: 5px;
         }
     }    
     .details-section__author{
         display: flex;
         width: 10%;
-        margin-right: 50px;
+        margin-right: 100px;
         gap: 15px;
         .author__name{
         color: $main-text-color;    

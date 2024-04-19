@@ -10,11 +10,11 @@ export default  function About() {
   return (
      <div> 
         <Header />
-        <Banner style= {{backgroundImage : `url(${img})`}} />
+        <Banner style= {{backgroundImage : `url(${img})`, filter:"brightness(0.7)"}} look={{padding:"0px"}} />
         <div className="collapse-block">
          <AboutMaker/>
         </div>
-        <Footer/>
+        <Footer style={{margin:"50px,50px,50px,50px"}}/>
       </div>       
   );
 }

@@ -10,12 +10,12 @@ export default  function Home() {
     <div className="app">
       <div className="app-top">
           <Header />
-          <Banner className title="Chez vous, partout et ailleurs"/>
+          <Banner title="Chez vous, partout et ailleurs"/>
       </div>
       <div className="app__app-grid">
           <Card />
       </div> 
-      <Footer  className="home-footer"/>  
+      <Footer/>  
     </div>  
   );
 }

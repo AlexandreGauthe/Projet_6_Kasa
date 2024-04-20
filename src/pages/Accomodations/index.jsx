@@ -24,7 +24,7 @@ export default  function Accomodations() {
       else {
         document.title = `Kasa -${selectedAccomodation.title}`;}},[selectedAccomodation,navigate]);
       if(!selectedAccomodation) {return null;}
-  const {id,title,location,host,tags, rating, description, equipments,pictures} = selectedAccomodation;
+  const {title,location,host,tags, rating, description, equipments,pictures} = selectedAccomodation;
   const range = [1, 2, 3, 4, 5];
   const nextPictOnClick = (event) =>{
     selectedPicture <= pictures.length -2 ? setSelectedPicture(selectedPicture + 1) : setSelectedPicture(0);

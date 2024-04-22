@@ -36,7 +36,7 @@ export default  function Accomodations() {
   return (
     <div>
       <Header />
-      <Slideshow src={pictures[selectedPicture]} alt={title} count={`${selectedPicture +1} / ${pictures.length}`} nextOnClick={nextPictOnClick} prevOnClick={prevPictOnclick}/>
+      <Slideshow src={pictures[selectedPicture]} alt={title} count= {pictures.length === 1 ? null :`${selectedPicture +1} / ${pictures.length}`} nextOnClick={nextPictOnClick} style={pictures.length===1 ?{display:"none"} : null} prevOnClick={prevPictOnclick}/>
       <Details titre={title} location={location} name={host.name} src={host.picture}/>
       <div className="ranking">
         <div className="ranking__tag-box">

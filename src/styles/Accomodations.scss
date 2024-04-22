@@ -29,6 +29,11 @@
             margin-left: 35px;
             margin-bottom: 30px;
         }
+        @media(max-width: 375px){
+            width: 80%;
+            margin-left:0px;
+            margin-right: 50px;
+        }
     }
     .ranking__stars-box{
         display: flex;
@@ -123,7 +128,8 @@
             margin: auto;
             width: 36.8vw;
             @media(max-width:811px){
-                padding-bottom: 20px;       
+                padding-bottom: 20px;
+                opacity: 0;       
             }
             @media(max-width:760px){
                 width: 90%;

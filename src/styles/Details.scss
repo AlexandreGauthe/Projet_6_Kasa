@@ -1,5 +1,9 @@
 @import "./Variables.scss";
 
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 header{
     
     .logo{
@@ -56,6 +60,9 @@ header{
             @media(max-width:460px){
                 width: 200%;
             }
+            @media(max-width: 375px){
+                margin-left: -10px;
+            }
         }
         .text-block__place{
            margin-top: -15px;
@@ -67,6 +74,9 @@ header{
            @media(max-width:460px){
             width: 200%;
            }
+           @media(max-width: 375px){
+            margin-left: -10px;
+        }
         }
     }    
     .details-section__author{
@@ -75,7 +85,7 @@ header{
         margin-right: 100px;
         gap: 15px;
         @media(max-width: 999px){
-            width: 20%;
+            width: 22%;
             gap: 0px;
         }
         @media(max-width:760px){

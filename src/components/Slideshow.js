@@ -7,9 +7,9 @@ import "../styles/Slideshow.scss"
 export default function Slideshow(props,nextOnClick,prevOnClick) {
     return(
         <div className="slideshow-block">
-            <FontAwesomeIcon className="slideshow-block__left-icon" onClick={props.prevOnClick} icon={faChevronLeft}/>
+            <FontAwesomeIcon className="slideshow-block__left-icon" onClick={props.prevOnClick} icon={faChevronLeft} style={props.style}/>
             <img src={props.src} alt={props.alt}></img>
-            <FontAwesomeIcon className="slideshow-block__right-icon" onClick={props.nextOnClick} icon={faChevronRight}/>
+            <FontAwesomeIcon className="slideshow-block__right-icon" onClick={props.nextOnClick} icon={faChevronRight} style={props.style}/>
             <span className="slideshow-block__count" count={props.count}>{props.count}</span>
         </div>
     )

@@ -37,9 +37,11 @@ header{
     .slideshow-block__left-icon{
         position: absolute;
         left: 150px;
+        @media(max-width: 811px){
+            left: 100px;
+        }
         @media(max-width: 760px){
             font-size: 40px;
-            left: 100px;
         }
         @media(max-width: 400px){
             left:50px;
@@ -50,6 +52,9 @@ header{
         right: 150px;
         @media(max-width: 903px){
             right: 60px;
+        }
+        @media(max-width: 811px){
+            right: 85px;
         }
         @media(max-width: 760px){
             right: 100px;

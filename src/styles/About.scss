@@ -19,7 +19,7 @@
         margin-top: 20px;
     }
     .label-block__content{
-        @media (max-width:376px){
+       @media (max-width:376px){
             font-size: 13px;
             width: 84%;
             margin-left: 20px;
@@ -27,6 +27,12 @@
         }
         }
     .label-block__content--visible{
+        @media(max-width:900px) {
+            height: 140px;
+        }
+        @media(max-width:711px) {
+            height: 250px;
+        }
         @media (max-width:376px){
             height: 180px;
             font-size: 13px;
@@ -36,12 +42,7 @@
             margin-top: 32px;
             padding-bottom:0px;
         }
-        @media(max-width:900px) {
-            height: 140px;
-        }
-        @media(max-width:711px) {
-            height: 250px;
-        }
+        
     }
 }
 

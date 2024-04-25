@@ -1,13 +1,13 @@
 @import "./Variables.scss";
 
 footer{
-    width: 100%;
+    width:100%;
     background-color: black;
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 25px;
     height: 208px;
     p{
         font-size: 25px;
@@ -15,11 +15,18 @@ footer{
         color: white;
         text-align: center;
         margin-top: 60px;
+        @media (max-width:376px){
+            margin-top: 30px;
+            width: 80%;
+        }
     }
     img{
         width: 10%;
         object-fit: cover;
         margin-top: 50px;
+        @media (max-width:376px){
+            width:50%;
+        }
     }
 }
 

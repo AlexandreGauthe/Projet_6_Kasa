@@ -1,9 +1,15 @@
 @import "./Variables.scss";
 
 .label-block{
-    width: 100%;
+    width: 100vw;
+    @media (max-width:376px){
+        width: 100vw;
+        margin-left: -8px;
+        margin-bottom: -15px;
+    }
+    
     .label-block__label {
-        width: 75%;
+        width: 75vw;
         color: white;
         font-size: 28px;
         display: flex;
@@ -14,44 +20,76 @@
         font-weight: 700;
         padding: 10px 10px 6px 10px;
         border-radius: 5px;
-        margin-right: 120px;
         margin-top: 40px;
         margin-bottom: 22px;
+        @media (max-width:376px){
+            width: 85vw;
+            font-size: 13px;
+            margin-bottom: -30px;
         }
-        .label-block__icone {
+       }
+        .label-block__icone{
             font-size: 28px;
             color: white;
             margin-top: 5px;
+            transition: 400ms;
+            @media (max-width:376px){
+                font-size: 13px;
+            }
+        }
+        .rotate{
+            transform: rotate(180deg);
         }
         .label-block__content{
-            margin: auto;
-            width: 76.4%;
+            position: relative;
+            bottom: 4px;
+            width: 75vw;
             background-color: #f6f6f6;
-            margin-top: -21px;
             border-radius: 5px;
-            margin-right: 120px;
-            display: none;
-        }
-        .visible{
-            display: block;
+            padding-left: 20px;
             margin: auto;
-            width: 76.4%;
-            background-color: #f6f6f6;
             margin-top: -21px;
-            border-radius: 5px;
-            margin-right: 120px;
-        }
-        .label-block__content p{
-            width: 92%;
-            color: $secondary-text-color;
-            font-family: $main-font-familiy;
-            font-size: 14px;
-            margin: auto;
-            margin-left: 20px;
-            padding-top: 14px;
-            padding-bottom: 20px;
-        }
+            opacity: 1;
+            overflow: hidden;
+            height: 0px;
+            transition: bottom 0.4s, height 0.3s;
+            @media (max-width:376px){
+                font-size: 13px;
+                width: 78.5%;
+                margin-left: 20px;
+                margin-top: 34px;
+            }
+            }
         
+        .label-block__content--visible{
+            transition: bottom 0.4s, height 0.3s;
+            position: relative;
+            bottom: 0px;
+            height: 20px;
+            opacity: 1;
+            width: 75vw;
+            height: 100px;
+            padding-left: 20px;
+            padding-top: 1px;
+            margin: auto;
+            margin-top: -21px;
+            margin-bottom: 20px;
+            background-color:#f6f6f6;
+          
+            @media (max-width:376px){
+                height: 200px;
+                font-size: 13px;
+                margin: auto;
+                width: 78.5%;
+                margin-left: 20px;
+                margin-top: 32px;
+                padding-bottom:0px;
+            }
+            }
+        #text{
+            width: 100%;
+            margin-bottom: 20px;
+        }    
 }
 
 

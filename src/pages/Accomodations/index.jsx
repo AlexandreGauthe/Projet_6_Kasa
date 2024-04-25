@@ -10,15 +10,22 @@ import Slideshow from "../../components/Slideshow";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faStar} from '@fortawesome/free-solid-svg-icons';
 import { useState } from "react";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "../../styles/Accomodations.scss"
 
 export default  function Accomodations() {
   const  { imageid } = useParams();
+  const [selectedPicture, setSelectedPicture] = useState(0);
+  const navigate = useNavigate();
   const selectedAccomodation = logements.find((logement) => logement.id === imageid);
+  useEffect(() =>{ if (!selectedAccomodation){
+        navigate("/error");}
+      else {
+        document.title = `Kasa -${selectedAccomodation.title}`;}},[selectedAccomodation,navigate]);
+      if(!selectedAccomodation) {return null;}
   const {title,location,host,tags, rating, description, equipments,pictures} = selectedAccomodation;
   const range = [1, 2, 3, 4, 5];
-  const [selectedPicture, setSelectedPicture] = useState(0);
-  
   const nextPictOnClick = (event) =>{
     selectedPicture <= pictures.length -2 ? setSelectedPicture(selectedPicture + 1) : setSelectedPicture(0);
   }
@@ -29,7 +36,7 @@ export default  function Accomodations() {
   return (
     <div>
       <Header />
-      <Slideshow src={pictures[selectedPicture]} alt={title} count={`${selectedPicture +1} / ${pictures.length}`} nextOnClick={nextPictOnClick} prevOnClick={prevPictOnclick}/>
+      <Slideshow src={pictures[selectedPicture]} alt={title} count= {pictures.length === 1 ? null :`${selectedPicture +1} / ${pictures.length}`} nextOnClick={nextPictOnClick} style={pictures.length===1 ?{display:"none"} : null} prevOnClick={prevPictOnclick}/>
       <Details titre={title} location={location} name={host.name} src={host.picture}/>
       <div className="ranking">
         <div className="ranking__tag-box">
@@ -41,8 +48,8 @@ export default  function Accomodations() {
         </div>
       </div>
       <div className="collapse-box">
-            <Collapse title="Description" content={description}/>
-            <Collapse title="Equipement"  content={equipments.map((equip,index) =>
+            <Collapse  title="Description" content={description}/>
+            <Collapse  title="Equipement"  content={equipments.map((equip,index) =>
               <li key={`${equip}-${index}`}>{equip}</li>)}/>
       </div>
       <Footer />

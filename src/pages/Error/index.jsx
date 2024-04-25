@@ -9,8 +9,10 @@ export default  function Error() {
       <div className="error">
         <Header />
         <h1 className="error__title">404</h1>
-        <p className="error__text"> Oups la page que vous demandez n'existe pas.</p>
-        <Link className="error__link" to="/">Retourner à la page d'acceuil</Link>
+        <div className="error-block">
+          <p className="error-block__error__text"> Oups la page que vous demandez n'existe pas.</p>
+          <Link className="error-block__error__link" to="/">Retourner à la page d'acceuil</Link>
+        </div>  
         <Footer />
       </div>  
   );

@@ -17,6 +17,7 @@
     margin-top: -55px;
     @media (max-width:760px){
         margin-top: 20px;
+        margin-bottom: 40px;
     }
     .label-block__content{
        @media (max-width:376px){
@@ -45,4 +46,23 @@
         
     }
 }
-
+footer{
+   @media(max-width:760px){
+        position: relative;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        margin-top: 0px;   
+    }
+    @media(max-width:375px){
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        margin-top: 0px;
+    }
+    img{
+        @media (max-width:376px){
+            width:40%;
+        }
+    }
+}

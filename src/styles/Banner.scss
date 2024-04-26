@@ -12,6 +12,9 @@
     background-position: center;
     border-radius: 20px;
     height: 223px;
+       @media (max-width: 1024px){
+        width: 80vw;
+       } 
        @media (max-width: 760px){
             position: relative;
             padding-bottom: 10px;

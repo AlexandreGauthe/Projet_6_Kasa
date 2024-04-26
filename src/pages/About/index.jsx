@@ -8,7 +8,7 @@ import "../../styles/About.scss"
 export default  function About() {
    
   return (
-     <div> 
+     <div className="main-about"> 
         <Header />
         <Banner style= {{backgroundImage : `url(${img})`, filter:"brightness(0.7)"}} look={{padding:"0px"}} />
         <div className="collapse-block">

@@ -164,17 +164,3 @@
         }
 
 }
-footer{
-    @media(max-width:760px){
-        position: relative;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-    }
-    @media(max-width:376px){
-        position: relative;
-    }
-    @media(max-width:375px){
-        width: 100%       
-    }
-}

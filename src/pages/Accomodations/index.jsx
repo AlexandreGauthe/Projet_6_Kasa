@@ -47,12 +47,15 @@ export default  function Accomodations() {
           {range.map((rangeElem, index) => rating >= rangeElem? <FontAwesomeIcon key={`${rangeElem}-${index}`} icon={faStar} className="star__icone_on"/> : <FontAwesomeIcon key={`${rangeElem}-${index}`} icon={faStar} className="star__icone_off"/>)}
         </div>
       </div>
-      <div className="collapse-box">
+
+      <div className="accomodations-collapse_box">
             <Collapse  title="Description" content={description}/>
             <Collapse  title="Equipement"  content={equipments.map((equip,index) =>
               <li key={`${equip}-${index}`}>{equip}</li>)}/>
       </div>
-      <Footer />
+      <div className="accomodations-footer">        
+        <Footer />
+      </div>  
     </div>  
   );
 }

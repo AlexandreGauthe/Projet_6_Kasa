@@ -8,13 +8,15 @@ import "../../styles/About.scss"
 export default  function About() {
    
   return (
-     <div className="main-about"> 
+     <div> 
         <Header />
         <Banner style= {{backgroundImage : `url(${img})`, filter:"brightness(0.7)"}} look={{padding:"0px"}} />
         <div className="collapse-block">
          <AboutMaker/>
         </div>
-        <Footer style={{margin:"50px,50px,50px,50px"}}/>
+        <div className="footer-block"> 
+          <Footer style={{margin:"50px,50px,50px,50px"}}/>
+        </div>  
       </div>       
   );
 }

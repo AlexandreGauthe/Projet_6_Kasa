@@ -24,7 +24,7 @@ header{
         width:106vw;
         margin-left: 15px;
     }
-    @media(max-width:400px){
+    @media(max-width:430px){
         width: 105vw;
         margin-left: 10px;
     }
@@ -37,6 +37,9 @@ header{
     .slideshow-block__left-icon{
         position: absolute;
         left: 150px;
+        @media(min-width:1629px){
+            left: 220px;
+        }
         @media(max-width: 811px){
             left: 100px;
         }
@@ -50,6 +53,9 @@ header{
     .slideshow-block__right-icon{
         position: absolute;
         right: 150px;
+        @media(min-width:1629px){
+            right: 220px;
+        }
         @media(max-width: 903px){
             right: 60px;
         }
@@ -78,8 +84,14 @@ header{
         @media(max-width: 760px){
             left:300px;
         }
+        @media(max-width: 430px){
+            left:200px;
+        }
         @media(max-width:400px){
             left:150px;
+        }
+        @media(max-width:375px){
+            left: 170px;
         }
     }
 }

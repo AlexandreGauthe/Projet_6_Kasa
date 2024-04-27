@@ -14,8 +14,10 @@ export default  function Home() {
       </div>
       <div className="app__app-grid">
           <Card />
-      </div> 
-      <Footer/>  
+      </div>
+      <div className="home-footer"> 
+        <Footer/>
+      </div>    
     </div>  
   );
 }

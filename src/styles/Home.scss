@@ -1,3 +1,5 @@
+@import "./Variables.scss";
+
 .app{
     width: 100%;
     height: 100vh;
@@ -38,21 +40,58 @@
     }
     
 }
-footer{
-   @media(max-width:375px){
-        width: 100%;
+.home-footer{
+    width:100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+    height: 208px;
+    @media(max-width:760px){
+            position: relative;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            }
+    @media(max-width:375px){
+            margin-top: auto;
+            width: 100%;
+            }
+            
+    p{
+        font-size: 25px;
+        font-family: $main-font-familiy;
+        color: white;
+        text-align: center;
+        margin-top: 60px;
+        @media(max-width:430px){
+            font-size: 16px;
+        }
+        @media(max-width:376px){
+            margin-top: 30px;
+            width: 80%;
+            font-size: 12px;
+            margin-left: 20px;
+        }
     }
     img{
-        @media(max-width:760px){
-            width: 20%;
+        width: 30%;
+        margin-left: 150px;
+        object-fit: cover;
+        margin-top: 50px;
+        @media(max-width: 430px){
+            width: 50%;
+            margin-left: 70px;
         }
-        @media (max-width:376px){
-            width:40%;
-        }
-    }
-    p{
-        @media(max-width:420px){
-            width: 70%;
+        @media(max-width:376px){
+            width:90%;
+            margin-left: 10px;
         }
     }
 }
+    
+    
+    
+

@@ -1,3 +1,4 @@
+// Composant regroupant les titres, lieux, hôtes ainsi que leurs photos de la location choisie // 
 import React from "react";
 import "../styles/Details.scss"
 

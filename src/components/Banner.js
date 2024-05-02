@@ -1,3 +1,5 @@
+// Composant Bannière utilisé en page d'acceuil et à propos //
+
 import React from "react";
 import "../styles/Banner.scss"
 

@@ -1,3 +1,5 @@
+// Composant servant à générer les cards des locations de la page d'acceuil depuis le json de données fournis //
+
 import React from "react";
 import logements from "../data/logements.json";
 import "../styles/Card.scss";

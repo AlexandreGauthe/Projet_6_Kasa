@@ -1,3 +1,4 @@
+// Page d'erreur qui s'affiche en cas de route inexistante d'une part ou de l'ID d'une location introuvable d'autre part //
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";

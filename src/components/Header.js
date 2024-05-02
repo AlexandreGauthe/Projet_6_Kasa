@@ -1,3 +1,5 @@
+// Composant d'en tête présent dans toutes les pages //
+
 import React from "react";
 import logo from "../assets/LOGO.png"
 import { Link } from "react-router-dom";

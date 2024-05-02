@@ -1,3 +1,5 @@
+// Composant collapse qui est utilisé sur la page à propos et sur la page de la laocation choisie //
+
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faChevronUp} from '@fortawesome/free-solid-svg-icons';

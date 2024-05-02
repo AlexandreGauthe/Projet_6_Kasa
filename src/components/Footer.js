@@ -1,3 +1,5 @@
+// Composant du pied de page présent dans toutes les pages //
+
 import React from "react";
 import logoFooter from "../assets/LOGO_foot.png";
 import "../styles/Footer.scss"

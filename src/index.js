@@ -1,3 +1,4 @@
+// Page d'initialisation et de routing // 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './pages/Home';

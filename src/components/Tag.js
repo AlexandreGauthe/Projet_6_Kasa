@@ -1,3 +1,5 @@
+// Composant des mots-clés assosciés aux locations //
+
 import React from "react";
 import "../styles/Tag.scss";
 

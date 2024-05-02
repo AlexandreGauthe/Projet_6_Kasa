@@ -1,3 +1,5 @@
+// Composant de galerie de défilement des photos des locations //
+
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faChevronRight} from '@fortawesome/free-solid-svg-icons';

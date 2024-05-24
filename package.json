@@ -2,7 +2,6 @@
   "name": "kasa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alexandregauthe.github.io/Projet_6_Kasa",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
@@ -14,7 +13,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "6.22.3",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "sass": "^1.74.1",
     "styled-components": "^6.1.8",
     "web-vitals": "^2.1.4"
@@ -48,4 +47,4 @@
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }
- }
+}

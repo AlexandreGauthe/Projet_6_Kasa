@@ -127,6 +127,7 @@ header{
         .author__name{
         color: $main-text-color;
         font-size: 18px;
+        font-family: $main-font-familiy;
         @media(max-width:999px){
          width: 80%;   
         }

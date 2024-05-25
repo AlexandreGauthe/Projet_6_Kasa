@@ -46,6 +46,7 @@
         .label-block__content{
             position: relative;
             font-size: 20px;
+            font-family: $main-font-familiy;
             bottom: 4px;
             width: 75vw;
             background-color: #f6f6f6;
@@ -69,6 +70,7 @@
             transition: bottom 0.4s, height 0.3s;
             position: relative;
             font-size: 20px;
+            font-family: $main-font-familiy;
             bottom: 0px;
             height: 20px;
             opacity: 1;
